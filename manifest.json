@@ -1,0 +1,25 @@
+{
+  "name": "HYR",
+  "version": "1.0",
+  "description": "hengyirong",
+  "manifest_version": 2,
+  "permissions": [
+    "tabs"
+  ],
+  "content_scripts": [{
+    "matches": ["*://www.hengyirong.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_end"
+  }],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "page_action": {
+    "default_title": "hyr"
+  },
+  "icons": {
+    "128": "hyr.png"
+  }
+}
